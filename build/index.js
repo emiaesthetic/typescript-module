@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const contacts_1 = require("./modules/contacts");
+const contacts_2_1 = require("./modules/contacts_2");
+console.group();
+console.log('Users:');
+console.group();
+contacts_1.users.forEach(contacts_1.logUser);
+console.groupEnd();
+console.log('');
+console.log('Persons:');
+console.group();
+contacts_2_1.persons.forEach(contacts_2_1.logPerson);
+console.groupEnd();
+console.groupEnd();
